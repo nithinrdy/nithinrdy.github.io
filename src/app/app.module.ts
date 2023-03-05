@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
+import { EmailBarComponent } from './email-bar/email-bar.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
     NavbarComponent,
     MainSectionComponent,
     LinksBarComponent,
+    EmailBarComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],

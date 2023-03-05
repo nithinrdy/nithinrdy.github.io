@@ -2,8 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.widescreen-styles .moniker {
+  letter-spacing: 0.1px;
+}
+
+.widescreen-styles .moniker:hover {
+  letter-spacing: 0.1em;
+}
+
 .widescreen-styles ul > a {
-  @apply relative flex justify-center m-4 text-3xl py-2;
+  @apply relative flex justify-center mr-8 text-3xl py-2;
 }
 
 .widescreen-styles ul > a::after {
