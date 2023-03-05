@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.mobile-styles .moniker {
-  @apply text-3xl font-bold;
+.widescreen-styles ul > a {
+  @apply relative flex justify-center m-4 text-3xl py-2;
 }
 
-.mobile-styles ul > a {
-  @apply relative flex justify-center m-4 text-3xl pb-2;
-}
-
-.mobile-styles ul > a::after {
-  @apply absolute w-full h-1 bottom-0 bg-black origin-right transition-all duration-200 ease-in-out;
+.widescreen-styles ul > a::after {
+  @apply absolute w-full h-1 bottom-0 bg-fuchsia-700 origin-center transition-all duration-200 ease-in-out rounded-full;
   content: "";
   transform: scaleX(0);
 }
 
-.mobile-styles ul > a:hover::after {
+.second-button::after {
+  @apply top-0;
+}
+
+.widescreen-styles ul > a:hover::after {
   transform: scaleX(1);
 }

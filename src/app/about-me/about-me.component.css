@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.about-me-container span {
+  @apply transition-all duration-200;
+  margin: 1px;
+  display: inline-block;
+}
+
+.about-me-container span:hover {
+  @apply text-fuchsia-700 -translate-x-1 -translate-y-1;
+}
