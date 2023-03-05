@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link-bar {
+  border: 1px solid;
+  background-color: #000;
+}

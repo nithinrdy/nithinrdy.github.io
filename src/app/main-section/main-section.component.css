@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.about-me-container span {
+.main-section-container span {
   @apply transition-all duration-150;
   margin: 1px;
   display: inline-block;
 }
 
-.about-me-container span:hover {
+.main-section-container span:hover {
   @apply text-fuchsia-700 -translate-x-1 -translate-y-1;
 }

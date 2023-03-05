@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {
   trigger,
-  state,
   style,
   animate,
   stagger,
@@ -10,9 +9,9 @@ import {
 } from '@angular/animations';
 
 @Component({
-  selector: 'app-about-me',
-  templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css'],
+  selector: 'app-main-section',
+  templateUrl: './main-section.component.html',
+  styleUrls: ['./main-section.component.css'],
   animations: [
     trigger('characterFade1', [
       transition('void => *', [
@@ -55,4 +54,4 @@ import {
     ]),
   ],
 })
-export class AboutMeComponent {}
+export class MainSectionComponent {}
