@@ -17,7 +17,7 @@ import {
       transition('void => *', [
         query('span', [
           style({ opacity: 0, transform: 'translateY(-20%)' }),
-          stagger(100, [
+          stagger(80, [
             animate(
               '0.5s 1s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
@@ -30,7 +30,7 @@ import {
       transition('void => *', [
         query('span', [
           style({ opacity: 0, transform: 'translateY(-20%)' }),
-          stagger(100, [
+          stagger(80, [
             animate(
               '0.5s 1.9s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
@@ -43,7 +43,7 @@ import {
       transition('void => *', [
         query('span', [
           style({ opacity: 0, transform: 'translateY(-20%)' }),
-          stagger(100, [
+          stagger(80, [
             animate(
               '0.5s 2.8s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
