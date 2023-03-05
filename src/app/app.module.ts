@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
-import { EmailBarComponent } from './email-bar/email-bar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NavbarComponent,
     MainSectionComponent,
     LinksBarComponent,
-    EmailBarComponent,
     AboutMeComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],

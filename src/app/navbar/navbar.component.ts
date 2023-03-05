@@ -18,9 +18,9 @@ import {
       transition('void => *', [
         query('a', [
           style({ opacity: 0, transform: 'translateY(20%)' }),
-          stagger(200, [
+          stagger(400, [
             animate(
-              '0.5s 4s ease-out',
+              '0.5s 1.5s ease-out',
               style({ opacity: 1, transform: 'translateY(0)' })
             ),
           ]),

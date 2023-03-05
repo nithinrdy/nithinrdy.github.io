@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .widescreen-styles .moniker {
-  @apply px-2 pt-2 pb-4;
+  @apply p-4;
   letter-spacing: 0.1px;
 }
 

@@ -6,3 +6,7 @@
   border: 1px solid;
   background-color: #000;
 }
+
+.email-link {
+  writing-mode: sideways-lr;
+}
