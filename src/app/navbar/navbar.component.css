@@ -3,19 +3,26 @@
 @tailwind utilities;
 
 .widescreen-styles .moniker {
+  @apply px-2 pt-2 pb-4;
   letter-spacing: 0.1px;
 }
 
-.widescreen-styles .moniker:hover {
-  letter-spacing: 0.1em;
+.widescreen-styles .moniker:after {
+  @apply absolute w-full h-full bottom-0 left-0 bg-fuchsia-900 origin-top transition-all duration-200 ease-out -z-10;
+  content: "";
+  transform: scaleY(0);
+}
+
+.widescreen-styles .moniker:hover:after {
+  transform: scaley(1);
 }
 
 .widescreen-styles ul > a {
   @apply relative flex justify-center mr-8 text-3xl py-2;
 }
 
-.widescreen-styles ul > a::after {
-  @apply absolute w-full h-1 bottom-0 bg-fuchsia-700 origin-center transition-all duration-200 ease-in-out rounded-full;
+.widescreen-styles ul > a:after {
+  @apply absolute w-full h-1 bottom-0 bg-fuchsia-900 origin-center transition-all duration-200 ease-in-out rounded-full;
   content: "";
   transform: scaleX(0);
 }

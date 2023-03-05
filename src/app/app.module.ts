@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
 import { EmailBarComponent } from './email-bar/email-bar.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { EmailBarComponent } from './email-bar/email-bar.component';
     MainSectionComponent,
     LinksBarComponent,
     EmailBarComponent,
+    AboutMeComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
