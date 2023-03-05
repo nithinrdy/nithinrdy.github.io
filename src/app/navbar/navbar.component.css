@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.widescreen-styles {
+  backdrop-filter: blur(8px);
+}
+
 .widescreen-styles .moniker {
   @apply p-4;
   letter-spacing: 0.1px;
