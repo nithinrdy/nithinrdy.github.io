@@ -22,7 +22,7 @@
 }
 
 .widescreen-styles ul > a {
-  @apply relative flex justify-center m-4 text-3xl py-2;
+  @apply relative flex justify-center m-4 text-3xl py-2 hover:cursor-none;
 }
 
 .widescreen-styles ul > a:after {
