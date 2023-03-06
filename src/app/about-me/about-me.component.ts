@@ -16,8 +16,8 @@ import {
     trigger('aboutMeFade', [
       transition('void => *', [
         query('p', [
-          style({ opacity: 0, transform: 'translateX(100px)' }),
-          stagger(300, [
+          style({ opacity: 0, transform: 'translateX(-100px)' }),
+          stagger(700, [
             animate(
               '0.5s ease-out',
               style({ opacity: 1, transform: 'translateX(0)' })

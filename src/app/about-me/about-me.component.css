@@ -6,8 +6,12 @@
   @apply text-center relative pb-4 mb-4;
 }
 
+.about-me .middle-text {
+  @apply mt-24;
+}
+
 .about-me .bottom-text {
-  @apply mt-32;
+  @apply mt-24;
 }
 
 @keyframes underlineAnimation {
@@ -32,9 +36,9 @@
   content: "";
   transform: scaleX(0);
   animation-name: underlineAnimation;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
-  --baseAnimDelay: 0.3s;
+  --baseAnimDelay: 0.9s;
 }
 
 .about-me p:hover:after {
@@ -42,29 +46,15 @@
 }
 
 .about-me p:nth-child(1):after {
-  animation-delay: calc(var(--baseAnimDelay) * 1);
+  animation-delay: 0.2s
 }
 
-.about-me p:nth-child(2):after {
+.about-me p:nth-child(2):after,
+.about-me p:nth-child(3):after {
   animation-delay: calc(var(--baseAnimDelay) * 2);
 }
 
-.about-me p:nth-child(3):after {
-  animation-delay: calc(var(--baseAnimDelay) * 3);
-}
-
-.about-me p:nth-child(4):after {
-  animation-delay: calc(var(--baseAnimDelay) * 4);
-}
-
+.about-me p:nth-child(4):after,
 .about-me p:nth-child(5):after {
-  animation-delay: calc(var(--baseAnimDelay) * 5);
-}
-
-.about-me p:nth-child(6):after {
-  animation-delay: calc(var(--baseAnimDelay) * 6);
-}
-
-.about-me p:nth-child(7):after {
-  animation-delay: calc(var(--baseAnimDelay) * 7);
+  animation-delay: calc(var(--baseAnimDelay) * 3.5);
 }
