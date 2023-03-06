@@ -31,6 +31,15 @@ import {
 export class AboutMeComponent implements AfterViewInit {
   @ViewChild('aboutMe') aboutMe!: ElementRef<HTMLElement>;
   sectionIsOnScreen = false;
+  beginChangingText = false;
+  whoIAm = [
+    'a student',
+    'a developer',
+    'an open sourcer(er?)',
+    'a Metal Gear geek',
+    'a TF2 addict',
+  ];
+  whoIAmIndex = 0;
   constructor() {}
   observer = new IntersectionObserver(
     (entries) => {
@@ -48,6 +57,10 @@ export class AboutMeComponent implements AfterViewInit {
   );
 
   ngAfterViewInit(): void {
+    setInterval(() => {
+      this.whoIAmIndex = (this.whoIAmIndex + 1) % this.whoIAm.length;
+    }, 5000);
+    this.beginChangingText = true;
     this.observer.observe(this.aboutMe.nativeElement);
   }
 }

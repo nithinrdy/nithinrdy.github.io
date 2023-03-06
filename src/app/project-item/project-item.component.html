@@ -1,0 +1,13 @@
+<div #projectItemElement class="flex flex-col items-center w-full h-full">
+  <img
+    class="w-1/2 self-start"
+    [src]="projectItem.image"
+    [alt]="projectItem.title + 'image'"
+  />
+  <div>
+    {{ projectItem.title }}
+  </div>
+  <div>
+    {{ projectItem.description }}
+  </div>
+</div>

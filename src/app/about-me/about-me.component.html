@@ -10,7 +10,16 @@
     @aboutMeFade
   >
     <p class="text-7xl mb-4 font-bold">Hey there, pardner :D</p>
-    <p class="middle-text italic">Name's Nithin. I'm a student!</p>
+    <p class="middle-text italic transition-all">
+      Name's Nithin. I'm
+      <span
+        class="inline-block w-72"
+        [ngClass]="{ 'changing-text': beginChangingText }"
+        style="font-family: 'Lobster'; font-style: normal;"
+      >
+        {{ whoIAm[whoIAmIndex] }}</span
+      >!
+    </p>
     <p class="bottom-text">
       Head down if you wanna see some cool** stuff I made
     </p>

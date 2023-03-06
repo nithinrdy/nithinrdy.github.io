@@ -1,10 +1,17 @@
 <div
   #projects
   id="projects"
-  class="about-me flex relative flex-col items-center text-3xl h-screen"
+  class="about-me flex relative flex-col items-center text-3xl h-screen px-32 pb-32"
   style="font-family: 'Raleway'"
 >
-  <div class="flex flex-col items-center mt-8 w-4/5" *ngIf="sectionIsOnScreen">
-    projects
+  <div
+    #projectItemContainer
+    class="flex flex-col relative w-full h-full items-center mt-8 overflow-hidden"
+  >
+    <app-project-item
+      class="w-full h-full absolute project-item"
+      *ngFor="let project of projectsList"
+      [projectItem]="project"
+    ></app-project-item>
   </div>
 </div>
