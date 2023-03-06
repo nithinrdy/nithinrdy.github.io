@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .about-me p {
-  @apply text-center relative pb-4 mb-4;
+  @apply text-center relative p-4 mb-4;
 }
 
 .about-me .middle-text {
@@ -32,7 +32,7 @@
 }
 
 .about-me p:after {
-  @apply absolute w-full h-1 bottom-0 left-0 bg-fuchsia-900 origin-right transition-all duration-200 ease-in-out rounded-full;
+  @apply absolute w-full h-2 bottom-0 left-0 bg-fuchsia-900 origin-right transition-all duration-200 ease-in-out;
   content: "";
   transform: scaleX(0);
   animation-name: underlineAnimation;
