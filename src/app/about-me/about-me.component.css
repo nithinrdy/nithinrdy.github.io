@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .about-me p {
-  @apply text-center relative p-4 mb-4;
+  @apply text-center relative p-4 mb-4 transition-all hover:text-fuchsia-900 hover:-translate-y-1 duration-300;
 }
 
 .about-me .middle-text {
@@ -32,7 +32,7 @@
 }
 
 .about-me p:after {
-  @apply absolute w-full h-2 bottom-0 left-0 bg-fuchsia-900 origin-right transition-all duration-200 ease-in-out;
+  @apply absolute w-full h-2 bottom-0 left-0 bg-fuchsia-900 origin-right;
   content: "";
   transform: scaleX(0);
   animation-name: underlineAnimation;
@@ -41,12 +41,8 @@
   --baseAnimDelay: 0.9s;
 }
 
-.about-me p:hover:after {
-  transform: scaleX(1);
-}
-
 .about-me p:nth-child(1):after {
-  animation-delay: 0.2s
+  animation-delay: 0.2s;
 }
 
 .about-me p:nth-child(2):after {
