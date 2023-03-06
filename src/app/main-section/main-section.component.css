@@ -3,11 +3,7 @@
 @tailwind utilities;
 
 .main-section-container span {
-  @apply transition-all duration-150;
+  @apply transition-all duration-150 hover:text-fuchsia-900 hover:-translate-x-1 hover:-translate-y-1;
   margin: 1px;
   display: inline-block;
-}
-
-.main-section-container span:hover {
-  @apply text-fuchsia-700 -translate-x-1 -translate-y-1;
 }
