@@ -55,26 +55,6 @@ import {
   ],
 })
 export class MainSectionComponent implements AfterViewInit {
-  @ViewChild('mainSection') mainSection!: ElementRef<HTMLElement>;
   constructor() {}
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        console.log(
-          entry.target,
-          'is',
-          entry.isIntersecting ? 'visible' : 'not visible'
-        );
-      });
-    },
-    {
-      root: null,
-      rootMargin: '-20px',
-      threshold: 0.5,
-    }
-  );
-
-  ngAfterViewInit(): void {
-    this.observer.observe(this.mainSection.nativeElement);
-  }
+  ngAfterViewInit(): void {}
 }

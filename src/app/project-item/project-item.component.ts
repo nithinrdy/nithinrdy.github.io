@@ -1,10 +1,4 @@
-import {
-  Component,
-  ViewChild,
-  ElementRef,
-  AfterViewInit,
-  Input,
-} from '@angular/core';
+import { Component, AfterViewInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-project-item',
@@ -16,6 +10,7 @@ export class ProjectItemComponent implements AfterViewInit {
     title: string;
     description: string;
     image: string;
+    imageCaption: string;
     gitHubLink: string;
     liveLink: string | null;
   };

@@ -1,12 +1,5 @@
 import { Component } from '@angular/core';
-import {
-  trigger,
-  style,
-  animate,
-  stagger,
-  transition,
-  query,
-} from '@angular/animations';
+import { trigger, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-links-bar',
