@@ -55,6 +55,7 @@
 }
 
 .changing-text {
+  animation-delay: 2.5s;
   animation: 25s colors infinite;
 }
 
