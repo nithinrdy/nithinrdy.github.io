@@ -59,6 +59,7 @@ export class AboutMeComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     let i = 0;
     setInterval(() => {
+      if (!this.whoIAmText) return;
       this.whoIAmText.nativeElement.style.opacity =
         this.whoIAmText.nativeElement.style.opacity === '0' ? '1' : '0';
       this.whoIAmText.nativeElement.style.transform =
@@ -71,7 +72,6 @@ export class AboutMeComponent implements AfterViewInit {
         }, 1000);
       }
       i = (i + 1) % (this.whoIAm.length * 2);
-      console.log(this.whoIAmIndex, i);
     }, 2000);
     this.observer.observe(this.aboutMe.nativeElement);
   }

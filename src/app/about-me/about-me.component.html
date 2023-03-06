@@ -4,24 +4,22 @@
   class="about-me flex relative flex-col items-center text-3xl h-screen"
   style="font-family: 'Raleway'"
 >
-  <div
-    class="flex flex-col items-center mt-16 w-4/5"
-    *ngIf="sectionIsOnScreen"
-    @aboutMeFade
-  >
-    <p class="text-7xl italic transition-all text-left">
+  <div class="flex flex-col mt-16 w-4/5" *ngIf="sectionIsOnScreen" @aboutMeFade>
+    <p class="text-7xl italic self-start transition-all text-left">
       <span> Hey there! <br /> </span>
       Name's Nithin. I'm
       <span
-        class="inline-block w-[400px] text-5xl transition-all text-center changing-text"
+        class="inline-block text-5xl transition-all changing-text"
         style="font-family: 'Lobster'; font-style: normal"
         #whoIAmText
       >
-        {{ whoIAm[whoIAmIndex] }}</span
-      >!
+        {{ whoIAm[whoIAmIndex] }}!</span
+      >
     </p>
-    <p class="bottom-text text-center">Down here's some cool** stuff I made</p>
-    <p class="text-xl text-center asterisk-text">
+    <p class="bottom-text self-end text-center">
+      Down here's some cool** stuff I made
+    </p>
+    <p class="text-xl text-center self-end asterisk-text">
       **Debatable, I know, but please humor me for the moment
     </p>
   </div>

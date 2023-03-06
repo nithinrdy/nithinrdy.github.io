@@ -17,6 +17,14 @@ export class ProjectsComponent implements AfterViewInit {
       gitHubLink: 'https://github.com/nithinrdy/portfolio',
       liveLink: null,
     },
+    {
+      title: 'Portfolio v1',
+      description:
+        'My first portfolio, built using HTML, CSS and JavaScript. It was a great learning experience, and I still use it as a reference for some of my projects.',
+      image: '',
+      gitHubLink: 'abc',
+      liveLink: 'https://nithinrdy.github.io/portfolio-v1/',
+    },
   ];
 
   constructor() {}

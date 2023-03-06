@@ -1,6 +1,7 @@
 <div
   #navbar
-  class="widescreen-styles h-30 flex flex-row justify-between items-center p-4 w-full sticky top-0 z-50"
+  class="widescreen-styles nav-bar h-30 flex flex-row justify-between items-center p-4 w-full sticky top-0 z-50"
+  [ngClass]="{ 'hide-nav': hideNav }"
   @navbarFade
 >
   <a

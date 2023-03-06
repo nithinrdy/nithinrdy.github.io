@@ -6,10 +6,10 @@
 >
   <div
     #projectItemContainer
-    class="flex flex-col relative w-full h-full items-center mt-8 overflow-hidden"
+    class="grid grid-cols-2 relative w-full h-full mt-8 overflow-hidden"
   >
     <app-project-item
-      class="w-full h-full absolute project-item"
+      class="project-item"
       *ngFor="let project of projectsList"
       [projectItem]="project"
     ></app-project-item>

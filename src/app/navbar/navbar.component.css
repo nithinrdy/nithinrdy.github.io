@@ -2,30 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-.widescreen-styles {
+.widescreen-styles.nav-bar {
+  @apply transition-transform duration-500 ease-out;
   backdrop-filter: blur(8px);
 }
 
-.widescreen-styles .moniker {
+.hide-nav {
+  @apply -translate-y-full;
+}
+
+.widescreen-styles.nav-bar .moniker {
   @apply p-4;
   letter-spacing: 0.1px;
 }
 
-.widescreen-styles .moniker:after {
+.widescreen-styles.nav-bar .moniker:after {
   @apply absolute w-full h-full bottom-0 left-0 bg-fuchsia-900 origin-top transition-all duration-200 ease-out -z-10;
   content: "";
   transform: scaleY(0);
 }
 
-.widescreen-styles .moniker:hover:after {
+.widescreen-styles.nav-bar .moniker:hover:after {
   transform: scaley(1);
 }
 
-.widescreen-styles ul > a {
+.widescreen-styles.nav-bar ul > a {
   @apply relative flex justify-center m-4 text-3xl py-2 hover:cursor-none;
 }
 
-.widescreen-styles ul > a:after {
+.widescreen-styles.nav-bar ul > a:after {
   @apply absolute w-full h-1 bottom-0 bg-fuchsia-900 origin-center transition-all duration-200 ease-in-out rounded-full;
   content: "";
   transform: scaleX(0);
@@ -35,6 +40,6 @@
   @apply top-0;
 }
 
-.widescreen-styles ul > a:hover::after {
+.widescreen-styles.nav-bar ul > a:hover::after {
   transform: scaleX(1);
 }

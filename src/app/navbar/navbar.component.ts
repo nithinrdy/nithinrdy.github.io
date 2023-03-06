@@ -1,7 +1,6 @@
-import { Component, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import {
   trigger,
-  state,
   style,
   animate,
   stagger,
@@ -30,10 +29,22 @@ import {
   ],
 })
 export class NavbarComponent implements AfterViewInit {
-  constructor(private navbar: ElementRef<HTMLElement>) {}
+  @ViewChild('navbar') navbar!: ElementRef<HTMLElement>;
+  previousScrollPosition = 0;
+  hideNav = false;
+  constructor() {}
 
   ngAfterViewInit() {
     document.documentElement.style.scrollPaddingTop =
       this.navbar.nativeElement.offsetHeight + 'px';
+    document.onscroll = () => {
+      if (window.scrollY > this.previousScrollPosition) {
+        this.hideNav = true;
+        this.previousScrollPosition = window.scrollY;
+      } else {
+        this.hideNav = false;
+        this.previousScrollPosition = window.scrollY;
+      }
+    };
   }
 }
