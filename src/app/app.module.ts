@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MainSectionComponent } from './main-section/main-section.component';
 import { LinksBarComponent } from './links-bar/links-bar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     MainSectionComponent,
     LinksBarComponent,
     AboutMeComponent,
+    ProjectsComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
