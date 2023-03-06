@@ -7,11 +7,11 @@
 }
 
 .about-me .middle-text {
-  @apply mt-24;
+  @apply mt-20;
 }
 
 .about-me .bottom-text {
-  @apply mt-24;
+  @apply mt-20;
 }
 
 @keyframes underlineAnimation {
@@ -49,12 +49,11 @@
   animation-delay: 0.2s
 }
 
-.about-me p:nth-child(2):after,
-.about-me p:nth-child(3):after {
-  animation-delay: calc(var(--baseAnimDelay) * 2);
+.about-me p:nth-child(2):after {
+  animation-delay: calc(var(--baseAnimDelay) * 1.5);
 }
 
-.about-me p:nth-child(4):after,
-.about-me p:nth-child(5):after {
-  animation-delay: calc(var(--baseAnimDelay) * 3.5);
+.about-me p:nth-child(3):after,
+.about-me p:nth-child(4):after {
+  animation-delay: calc(var(--baseAnimDelay) * 3);
 }
