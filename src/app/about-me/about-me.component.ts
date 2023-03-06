@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import {
   animate,
   query,
@@ -16,11 +16,11 @@ import {
     trigger('aboutMeFade', [
       transition('void => *', [
         query('p', [
-          style({ opacity: 0, transform: 'translateY(70px)' }),
-          stagger(200, [
+          style({ opacity: 0, transform: 'translateX(100px)' }),
+          stagger(300, [
             animate(
-              '0.5s ease-in',
-              style({ opacity: 1, transform: 'translateY(0)' })
+              '0.5s ease-out',
+              style({ opacity: 1, transform: 'translateX(0)' })
             ),
           ]),
         ]),
@@ -28,4 +28,26 @@ import {
     ]),
   ],
 })
-export class AboutMeComponent {}
+export class AboutMeComponent implements AfterViewInit {
+  @ViewChild('aboutMe') aboutMe!: ElementRef<HTMLElement>;
+  sectionIsOnScreen = false;
+  constructor() {}
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.sectionIsOnScreen = true;
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: '-20px',
+      threshold: 0.5,
+    }
+  );
+
+  ngAfterViewInit(): void {
+    this.observer.observe(this.aboutMe.nativeElement);
+  }
+}

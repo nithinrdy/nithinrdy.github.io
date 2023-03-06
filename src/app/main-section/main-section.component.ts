@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 import {
   trigger,
   style,
@@ -55,11 +55,16 @@ import {
   ],
 })
 export class MainSectionComponent implements AfterViewInit {
-  constructor(private mainSection: ElementRef<HTMLElement>) {}
+  @ViewChild('mainSection') mainSection!: ElementRef<HTMLElement>;
+  constructor() {}
   observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        console.log(entry.target, "is", entry.isIntersecting ? "visible" : "not visible");
+        console.log(
+          entry.target,
+          'is',
+          entry.isIntersecting ? 'visible' : 'not visible'
+        );
       });
     },
     {

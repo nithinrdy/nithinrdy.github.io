@@ -12,6 +12,6 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     setTimeout(() => {
       this.showLoader = false;
-    }, 5000);
+    }, 4000);
   }
 }

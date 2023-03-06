@@ -1,3 +1,70 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.about-me p {
+  @apply text-center relative pb-4 mb-4;
+}
+
+.about-me .bottom-text {
+  @apply mt-32;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    transform: scaleX(0);
+  }
+  25% {
+    transform: scaleX(1);
+  }
+  75% {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  100% {
+    transform-origin: left;
+    transform: scaleX(0);
+  }
+}
+
+.about-me p:after {
+  @apply absolute w-full h-1 bottom-0 left-0 bg-fuchsia-900 origin-right transition-all duration-200 ease-in-out rounded-full;
+  content: "";
+  transform: scaleX(0);
+  animation-name: underlineAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  --baseAnimDelay: 0.3s;
+}
+
+.about-me p:hover:after {
+  transform: scaleX(1);
+}
+
+.about-me p:nth-child(1):after {
+  animation-delay: calc(var(--baseAnimDelay) * 1);
+}
+
+.about-me p:nth-child(2):after {
+  animation-delay: calc(var(--baseAnimDelay) * 2);
+}
+
+.about-me p:nth-child(3):after {
+  animation-delay: calc(var(--baseAnimDelay) * 3);
+}
+
+.about-me p:nth-child(4):after {
+  animation-delay: calc(var(--baseAnimDelay) * 4);
+}
+
+.about-me p:nth-child(5):after {
+  animation-delay: calc(var(--baseAnimDelay) * 5);
+}
+
+.about-me p:nth-child(6):after {
+  animation-delay: calc(var(--baseAnimDelay) * 6);
+}
+
+.about-me p:nth-child(7):after {
+  animation-delay: calc(var(--baseAnimDelay) * 7);
+}
