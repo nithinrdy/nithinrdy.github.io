@@ -7,7 +7,11 @@
 }
 
 .about-me .middle-text {
-  @apply mt-20;
+  @apply mt-10;
+}
+
+.about-me .middle-text span {
+  transition-duration: 1s;
 }
 
 .about-me .bottom-text {
@@ -52,29 +56,4 @@
 .about-me p:nth-child(3):after,
 .about-me p:nth-child(4):after {
   animation-delay: calc(var(--baseAnimDelay) * 3);
-}
-
-.changing-text {
-  animation-delay: 2.5s;
-  animation: 25s colors infinite;
-}
-
-@keyframes colors {
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  0%,
-  20%,
-  40%,
-  60%,
-  80%,
-  100% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
 }

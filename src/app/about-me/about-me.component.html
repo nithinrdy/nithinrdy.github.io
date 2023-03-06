@@ -9,20 +9,18 @@
     *ngIf="sectionIsOnScreen"
     @aboutMeFade
   >
-    <p class="text-7xl mb-4 font-bold">Hey there, pardner :D</p>
-    <p class="middle-text italic transition-all">
+    <p class="mb-4 font-bold">Hey there, pardner :D</p>
+    <p class="text-7xl middle-text italic transition-all">
       Name's Nithin. I'm
       <span
-        class="inline-block w-72"
-        [ngClass]="{ 'changing-text': sectionIsOnScreen }"
+        class="inline-block w-[400px] text-5xl transition-all"
         style="font-family: 'Lobster'; font-style: normal"
+        #whoIAmText
       >
         {{ whoIAm[whoIAmIndex] }}</span
       >!
     </p>
-    <p class="bottom-text">
-      Head down if you wanna see some cool** stuff I made
-    </p>
+    <p class="bottom-text">Down here's some cool** stuff I made</p>
     <p class="text-xl">**Debatable, but please humor me for the moment</p>
   </div>
 </div>

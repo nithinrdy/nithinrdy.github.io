@@ -30,8 +30,8 @@ import {
 })
 export class AboutMeComponent implements AfterViewInit {
   @ViewChild('aboutMe') aboutMe!: ElementRef<HTMLElement>;
+  @ViewChild('whoIAmText') whoIAmText!: ElementRef<HTMLElement>;
   sectionIsOnScreen = false;
-  beginChangingText = false;
   whoIAm = [
     'a student',
     'a developer',
@@ -57,10 +57,22 @@ export class AboutMeComponent implements AfterViewInit {
   );
 
   ngAfterViewInit(): void {
+    let i = 0;
     setInterval(() => {
-      this.whoIAmIndex = (this.whoIAmIndex + 1) % this.whoIAm.length;
-    }, 5000);
-    this.beginChangingText = true;
+      this.whoIAmText.nativeElement.style.opacity =
+        this.whoIAmText.nativeElement.style.opacity === '0' ? '1' : '0';
+      this.whoIAmText.nativeElement.style.transform =
+        this.whoIAmText.nativeElement.style.transform === 'translateY(-100px)'
+          ? 'translateY(0px)'
+          : 'translateY(-100px)';
+      if (this.whoIAmText.nativeElement.style.opacity === '0') {
+        setTimeout(() => {
+          this.whoIAmIndex = (this.whoIAmIndex + 1) % this.whoIAm.length;
+        }, 1000);
+      }
+      i = (i + 1) % (this.whoIAm.length * 2);
+      console.log(this.whoIAmIndex, i);
+    }, 2000);
     this.observer.observe(this.aboutMe.nativeElement);
   }
 }
