@@ -1,9 +1,27 @@
-import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import {
+  trigger,
+  transition,
+  query,
+  style,
+  stagger,
+  animate,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  animations: [
+    trigger('cardsFadeIn', [
+      transition('* => *', [
+        query(':enter', [
+          style({ opacity: 0, transform: 'translateY(-60px)' }),
+          stagger(200, animate('700ms ease-out')),
+        ]),
+      ]),
+    ]),
+  ],
 })
 export class ProjectsComponent implements AfterViewInit {
   projectsList = [
