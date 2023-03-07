@@ -33,7 +33,7 @@ export class ProjectsComponent implements AfterViewInit {
         "The only place where form takes priority over function (probably because form IS the function, idk :P).<br /> Built using Angular, Angular's animations module and TailwindCSS.",
       image: 'assets/portfolio_main.png',
       imageCaption: 'The topmost section of the page.',
-      gitHubLink: 'https://github.com/nithinrdy/portfolio',
+      gitHubLink: 'https://github.com/nithinrdy/nithinrdy.github.io',
       liveLink: 'https://nithinrdy.github.io',
     },
     {
