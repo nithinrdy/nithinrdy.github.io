@@ -1,0 +1,17 @@
+<div
+  #credits
+  id="credits"
+  class="credits flex relative flex-col items-center text-3xl h-screen"
+  style="font-family: 'Raleway'"
+>
+  <div class="flex flex-col mt-16 w-4/5" *ngIf="sectionIsOnScreen" @creditsFade>
+    <p>
+      A few people who inspired elements of this page. I definitely did not just
+      copy these things/ideas.
+    </p>
+    <p
+      class="wide:text-7xl mob:text-4xl self-start transition-all text-left"
+    ></p>
+    <p class="bottom-text self-end mob:text-2xl text-right"></p>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { LoaderComponent } from './loader/loader.component';
+import { CreditsComponent } from './credits/credits.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { LoaderComponent } from './loader/loader.component';
     ProjectsComponent,
     ProjectItemComponent,
     LoaderComponent,
+    CreditsComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
