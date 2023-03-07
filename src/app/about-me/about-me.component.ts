@@ -63,9 +63,9 @@ export class AboutMeComponent implements AfterViewInit {
       this.whoIAmText.nativeElement.style.opacity =
         this.whoIAmText.nativeElement.style.opacity === '0' ? '1' : '0';
       this.whoIAmText.nativeElement.style.transform =
-        this.whoIAmText.nativeElement.style.transform === 'translateY(-100px)'
+        this.whoIAmText.nativeElement.style.transform === 'translateY(100px)'
           ? 'translateY(0px)'
-          : 'translateY(-100px)';
+          : 'translateY(100px)';
       if (this.whoIAmText.nativeElement.style.opacity === '0') {
         setTimeout(() => {
           this.whoIAmIndex = (this.whoIAmIndex + 1) % this.whoIAm.length;
