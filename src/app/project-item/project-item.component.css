@@ -22,6 +22,15 @@
   @apply opacity-0;
 }
 
+@media (max-width: 956px) {
+  .project-card:hover .blur-layer .minimized-text {
+    @apply opacity-100;
+  }
+  .project-card:hover .opaque-layer {
+    @apply opacity-100;
+  }
+}
+
 .maximized-backdrop {
   @apply fixed h-full w-full top-0 left-0 z-50 backdrop-blur-3xl;
 }

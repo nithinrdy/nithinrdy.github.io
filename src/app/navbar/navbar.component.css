@@ -23,7 +23,7 @@
 }
 
 .widescreen-styles.nav-bar .moniker:hover:after {
-  transform: scaley(1);
+  transform: scaleY(1);
 }
 
 .widescreen-styles.nav-bar ul > a {
@@ -57,7 +57,7 @@
 }
 
 .bar-2 {
-  top: 16px;
+  top: 16.5px;
 }
 
 .bar-3 {
@@ -66,7 +66,7 @@
 
 .hamburger-container.mobile-nav-active .bar-1 {
   @apply bg-white;
-  transform: rotate(45deg) translate(11px, 11px);
+  transform: rotate(45deg) translate(11px, 12px);
 }
 
 .hamburger-container.mobile-nav-active .bar-2 {
@@ -75,7 +75,7 @@
 
 .hamburger-container.mobile-nav-active .bar-3 {
   @apply bg-white;
-  transform: rotate(-45deg) translate(11px, -11px);
+  transform: rotate(-45deg) translate(11px, -12px);
 }
 
 .hide-nav-menu {
@@ -84,4 +84,10 @@
 
 .mobile-nav-list a {
   @apply w-4/5 text-3xl text-center pb-2 mt-8 border-b-2 border-white;
+}
+
+@media (max-width: 956px) {
+  .widescreen-styles.nav-bar .moniker:hover:after {
+    transform: scaleY(0);
+  }
 }
