@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import {
   trigger,
   transition,
@@ -24,6 +24,8 @@ import {
   ],
 })
 export class ProjectsComponent implements AfterViewInit {
+  @ViewChild('projects') projects!: ElementRef<HTMLElement>;
+  sectionIsOnScreen = false;
   projectsList = [
     {
       title: 'This Portfolio!',
@@ -67,5 +69,22 @@ export class ProjectsComponent implements AfterViewInit {
 
   constructor() {}
 
-  ngAfterViewInit() {}
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.sectionIsOnScreen = true;
+        }
+      });
+    },
+    {
+      root: null,
+      rootMargin: '-20px',
+      threshold: 0.5,
+    }
+  );
+
+  ngAfterViewInit() {
+    this.observer.observe(this.projects.nativeElement);
+  }
 }
