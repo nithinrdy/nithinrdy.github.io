@@ -5,7 +5,9 @@
   style="font-family: 'Raleway'"
 >
   <div class="flex flex-col mt-16 w-4/5" *ngIf="sectionIsOnScreen" @aboutMeFade>
-    <p class="wide:text-7xl mob:text-4xl italic self-start transition-all text-left">
+    <p
+      class="wide:text-7xl mob:text-4xl italic self-start transition-all text-left"
+    >
       <span> Hey there! <br /> </span>
       Name's Nithin. I'm
       <span
@@ -16,10 +18,12 @@
         {{ whoIAm[whoIAmIndex] }}!</span
       >
     </p>
-    <p class="bottom-text self-end text-center mob:text-2xl">
+    <p class="bottom-text self-end mob:text-2xl text-right">
       Down here's some cool** stuff I made
     </p>
-    <p class="wide:text-xl text-center self-end asterisk-text mob:text-sm">
+    <p
+      class="wide:text-xl self-end asterisk-text mob:text-sm text-right"
+    >
       **Debatable, I know, but please humor me for the moment
     </p>
   </div>
