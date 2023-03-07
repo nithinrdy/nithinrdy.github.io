@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-card {
+  @apply transition-all duration-300 hover:-translate-y-4 shadow-md hover:cursor-pointer hover:shadow-2xl;
+}
+
+.project-card .opaque-layer {
+  @apply transition-all duration-300 backdrop-blur-lg;
+}
+
+.project-card .opaque-layer .minimized-text {
+  @apply transition-all duration-300;
+}
+
+.project-card:hover .opaque-layer {
+  @apply opacity-0;
+}
+
+.project-card:hover .blur-layer .minimized-text {
+  @apply opacity-0;
+}
+
+.maximized-backdrop {
+  @apply fixed h-full w-full top-0 left-0 z-50 backdrop-blur-3xl;
+}
+
+.project-card.opened-card {
+  @apply w-3/4 h-3/4 mob:h-[90%] z-50 backdrop-blur-3xl hover:translate-y-0 hover:cursor-default shadow-lg bg-white p-4 mob:pt-20 wide:pt-20;
+}
+
+.project-card.opened-card img {
+  @apply aspect-video shadow-md mob:w-full mob:h-1/4;
+}
+
+.project-card.opened-card .cross-button .cross-bar-1 {
+  @apply rotate-45 transition-transform duration-300;
+}
+
+.project-card.opened-card .cross-button .cross-bar-2 {
+  @apply -rotate-45 transition-transform duration-300;
+}
+
+.project-card.opened-card .cross-button:hover .cross-bar-1 {
+  @apply -rotate-45 scale-125;
+}
+
+.project-card.opened-card .cross-button:hover .cross-bar-2 {
+  @apply rotate-45 scale-125;
+}

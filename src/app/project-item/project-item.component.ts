@@ -14,8 +14,17 @@ export class ProjectItemComponent implements AfterViewInit {
     gitHubLink: string;
     liveLink: string | null;
   };
-  sectionIsOnScreen = false;
+  sectionOpened = false;
   constructor() {}
 
   ngAfterViewInit(): void {}
+
+  openSection() {
+    this.sectionOpened = true;
+  }
+
+  closeSection(e: MouseEvent) {
+    e.stopPropagation();
+    this.sectionOpened = false;
+  }
 }
