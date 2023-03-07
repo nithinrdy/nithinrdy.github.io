@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .about-me p {
-  @apply relative p-4 transition-all hover:text-fuchsia-900 hover:-translate-y-3 duration-300 hover:cursor-none;
+  @apply relative p-4 transition-all hover:text-fuchsia-900 duration-300 hover:cursor-default;
 }
 
 .about-me .changing-text {
