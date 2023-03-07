@@ -16,16 +16,16 @@
     transform: scale(1) rotate(0deg) translate(-50%, -50%);
   }
   25% {
-    transform: scale(1) rotate(0deg) translate(-70%, -50%) skew(0deg, 4deg);
+    transform: scale(1) rotate(0deg) translate(-70%, -50%) skew(0deg, 3deg);
   }
   35% {
-    transform: scale(1) rotate(0deg) translate(-70%, -50%) skew(0deg, 4deg);
+    transform: scale(1) rotate(0deg) translate(-70%, -50%) skew(0deg, 3deg);
   }
   50% {
-    transform: scale(1) rotate(0deg) translate(-30%, -50%) skew(-4deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(-30%, -50%) skew(-3deg, 0deg);
   }
   58% {
-    transform: scale(1) rotate(0deg) translate(-30%, -50%) skew(-4deg, 0deg);
+    transform: scale(1) rotate(0deg) translate(-30%, -50%) skew(-3deg, 0deg);
   }
   70% {
     transform: scale(1) rotate(0deg) translate(-50%, -50%) skew(0deg, 0deg);
