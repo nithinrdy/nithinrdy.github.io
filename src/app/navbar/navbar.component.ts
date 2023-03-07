@@ -30,13 +30,20 @@ import {
 })
 export class NavbarComponent implements AfterViewInit {
   @ViewChild('navbar') navbar!: ElementRef<HTMLElement>;
+  @ViewChild('navbarMob') navbarMob!: ElementRef<HTMLElement>;
   previousScrollPosition = 0;
   hideNav = false;
+  mobileNavActive = false;
   constructor() {}
 
   ngAfterViewInit() {
-    document.documentElement.style.scrollPaddingTop =
-      this.navbar.nativeElement.offsetHeight + 'px';
+    if (window.innerWidth > 956) {
+      document.documentElement.style.scrollPaddingTop =
+        this.navbar.nativeElement.offsetHeight + 'px';
+    } else {
+      document.documentElement.style.scrollPaddingTop =
+        this.navbarMob.nativeElement.offsetHeight + 'px';
+    }
     document.onscroll = () => {
       if (window.scrollY > this.previousScrollPosition) {
         this.hideNav = true;
@@ -46,5 +53,17 @@ export class NavbarComponent implements AfterViewInit {
         this.previousScrollPosition = window.scrollY;
       }
     };
+  }
+
+  openNav() {
+    this.mobileNavActive = true;
+  }
+
+  closeNav() {
+    this.mobileNavActive = false;
+  }
+
+  toggleNav() {
+    this.mobileNavActive = !this.mobileNavActive;
   }
 }

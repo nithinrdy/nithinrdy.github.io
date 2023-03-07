@@ -43,3 +43,45 @@
 .widescreen-styles.nav-bar ul > a:hover::after {
   transform: scaleX(1);
 }
+
+.logo-with-mobile-menu-active {
+  @apply text-white;
+}
+
+.hamburger {
+  @apply absolute w-full h-1 bg-black transition-all duration-500;
+}
+
+.bar-1 {
+  @apply top-0;
+}
+
+.bar-2 {
+  top: 16px;
+}
+
+.bar-3 {
+  @apply bottom-0;
+}
+
+.hamburger-container.mobile-nav-active .bar-1 {
+  @apply bg-white;
+  transform: rotate(45deg) translate(11px, 11px);
+}
+
+.hamburger-container.mobile-nav-active .bar-2 {
+  opacity: 0;
+}
+
+.hamburger-container.mobile-nav-active .bar-3 {
+  @apply bg-white;
+  transform: rotate(-45deg) translate(11px, -11px);
+}
+
+.hide-nav-menu {
+  @apply translate-y-full;
+}
+
+.mobile-nav-list a {
+  @apply w-4/5 text-3xl text-center pb-2 mt-8 border-b-2 border-white;
+}
