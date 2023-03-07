@@ -20,7 +20,7 @@
     </div>
     <img
       *ngIf="!sectionOpened"
-      class="w-full h-full self-start object-cover"
+      class="mob:hidden w-full h-full self-start object-cover"
       [src]="projectItem.image"
       [alt]="projectItem.title + 'image'"
     />
@@ -36,23 +36,23 @@
       </p>
     </div>
     <div *ngIf="sectionOpened" class="flex flex-col items-start wide:pr-4">
-      <div class="image-container">
+      <div class="image-container mob:w-full">
         <img
-          class="self-start object-cover w-full"
+          class="mob:hidden self-start object-cover w-full"
           [src]="projectItem.image"
           [alt]="projectItem.title + 'image'"
         />
-        <p class="self-start text-sm mt-4">
+        <p class="mob:hidden self-start text-sm mt-4">
           {{ projectItem.imageCaption }}
         </p>
         <div class="flex wide:items-center mob:flex-col wide:mt-4">
           <p
-            class="wide:text-5xl mob:text-3xl mb-4"
+            class="wide:text-5xl mob:text-3xl mob:text-center mb-4"
             style="font-family: 'Lobster'"
           >
             {{ projectItem.title }}
           </p>
-          <div class="flex items-start">
+          <div class="flex items-start mob:justify-center">
             <a
               class="wide:ml-4 mob:scale-90"
               [href]="projectItem.gitHubLink"
@@ -97,7 +97,7 @@
         </div>
       </div>
       <p
-        class="mod:block wide:hidden pt-2 pb-2 pl-2 text-base text-right mobile-desc-text"
+        class="mod:block wide:hidden pt-2 pb-2 pl-2 pr-2 text-base text-center mobile-desc-text"
         [innerHTML]="projectItem.description"
       ></p>
     </div>
@@ -105,8 +105,6 @@
       *ngIf="sectionOpened"
       class="mob:hidden flex flex-col items-center text-2xl text-right mt-16 w-[170%]"
       [innerHTML]="projectItem.description"
-    >
-      <p></p>
-    </div>
+    ></div>
   </div>
 </div>

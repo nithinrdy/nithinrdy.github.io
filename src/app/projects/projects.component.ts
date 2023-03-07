@@ -34,7 +34,7 @@ export class ProjectsComponent implements AfterViewInit {
       image: 'assets/portfolio_main.png',
       imageCaption: 'The topmost section of the page.',
       gitHubLink: 'https://github.com/nithinrdy/portfolio',
-      liveLink: null,
+      liveLink: 'https://nithinrdy.github.io',
     },
     {
       title: 'Connect',
@@ -61,9 +61,9 @@ export class ProjectsComponent implements AfterViewInit {
       description:
         'A set of python scripts which scrape raw HTML off of the CDC website, compile a list of diseases, then sequentially scrapes the basic information for each disease (description, aliases, symptoms, rarity, etc.).<br /> Built using Python, BeautifulSoup, and automated using a simple Bash script.',
       image: 'assets/dd.png',
-      imageCaption: "Doesn't really have a UI, so here's a picture of DD!",
+      imageCaption: "Doesn't really have a UI, so here's a cute picture of DD!",
       gitHubLink: 'https://github.com/nithinrdy/fettle-scraper',
-      liveLink: '',
+      liveLink: null,
     },
   ];
 
