@@ -71,7 +71,12 @@
               />
             </svg>
           </a>
-          <a class="ml-4 p-1" [href]="projectItem.liveLink" target="_blank">
+          <a
+            *ngIf="projectItem.liveLink"
+            class="ml-4 p-1"
+            [href]="projectItem.liveLink"
+            target="_blank"
+          >
             <svg
               viewBox="0 0 509 511.54"
               width="30px"
