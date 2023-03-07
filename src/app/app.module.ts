@@ -9,6 +9,7 @@ import { LinksBarComponent } from './links-bar/links-bar.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ProjectItemComponent } from './project-item/project-item.component';
     AboutMeComponent,
     ProjectsComponent,
     ProjectItemComponent,
+    LoaderComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],

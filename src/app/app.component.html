@@ -1,5 +1,7 @@
 <app-navbar></app-navbar>
-<div *ngIf="showLoader"></div>
+<div *ngIf="showLoader">
+  <app-loader></app-loader>
+</div>
 <div *ngIf="!showLoader">
   <app-main-section></app-main-section>
   <app-about-me></app-about-me>

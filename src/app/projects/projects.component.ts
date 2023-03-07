@@ -24,6 +24,22 @@ export class ProjectsComponent implements AfterViewInit {
       gitHubLink: 'abc',
       liveLink: 'some-stuff',
     },
+    {
+      title: 'Somethin2',
+      description: 'Somethin else2',
+      image: '',
+      imageCaption: '',
+      gitHubLink: 'abc2',
+      liveLink: 'some-stuff2',
+    },
+    {
+      title: 'Somethin3',
+      description: 'Somethin else3',
+      image: '',
+      imageCaption: '',
+      gitHubLink: 'abc3',
+      liveLink: 'some-stuff3',
+    },
   ];
 
   constructor() {}
