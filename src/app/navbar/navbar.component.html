@@ -1,6 +1,6 @@
 <div
   #navbar
-  class="widescreen-styles nav-bar h-30 flex flex-row justify-between items-center p-4 w-full sticky top-0 z-50"
+  class="mob:hidden widescreen-styles nav-bar h-30 flex flex-row justify-between items-center p-4 w-full sticky top-0 z-50"
   [ngClass]="{ 'hide-nav': hideNav }"
   @navbarFade
 >
@@ -23,4 +23,20 @@
       <li>Designs that... "inspired" me</li>
     </a>
   </ul>
+</div>
+<div
+  #navbar
+  class="wide:hidden widescreen-styles nav-bar h-30 flex flex-row justify-between items-center p-4 w-full sticky top-0 z-50"
+  [ngClass]="{ 'hide-nav': hideNav }"
+  @navbarFade
+>
+  <a
+    class="moniker relative block text-5xl font-bold hover:text-white hover:cursor-none transition-all duration-300"
+    style="font-family: 'Lobster', cursive"
+    href="#"
+  >
+    nithinrdy
+  </a>
+
+  <button></button>
 </div>

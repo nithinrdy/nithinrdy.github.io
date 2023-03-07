@@ -1,5 +1,5 @@
 <div
-  class="relative flex items-center justify-center transition-all h-[90%]"
+  class="relative flex items-center justify-center transition-all mob:w-screen h-[90%]"
   [ngClass]="{ 'maximized-backdrop': sectionOpened }"
 >
   <div
@@ -45,7 +45,7 @@
         {{ projectItem.imageCaption }}
       </p>
       <div class="flex wide:items-center mob:flex-col">
-        <p class="mt-4 text-5xl mb-4" style="font-family: 'Lobster'">
+        <p class="mt-4 wide:text-5xl mob:text-3xl mb-4" style="font-family: 'Lobster'">
           {{ projectItem.title }}
         </p>
         <div class="flex items-start">
@@ -92,9 +92,10 @@
         </div>
       </div>
       <div class="">
-        <p class="mod:block wide:hidden mt-8 text-2xl">
-          {{ projectItem.description }}
-        </p>
+        <p
+          class="mod:block wide:hidden mt-8 text-base"
+          [innerHTML]="projectItem.description"
+        ></p>
       </div>
     </div>
     <div

@@ -1,14 +1,14 @@
 <div
   #projects
   id="projects"
-  class="projects flex relative flex-col items-center text-3xl h-screen px-32 pb-32 mob:px-4"
+  class="projects flex relative flex-col items-center text-3xl h-screen px-32 pb-32 mob:px-4 mob:w-screen"
   style="font-family: 'Raleway'"
 >
   <div
-    class="grid grid-cols-2 grid-rows-2 mob:grid-cols-1 mob:grid-rows-4 mt-4 relative w-full h-full"
+    class="wide:grid wide:grid-cols-2 wide:grid-rows-2 mob:flex mob:flex-col mob:items-center mt-4 relative w-full h-full"
   >
     <app-project-item
-      class="project-item mx-12 mob:flex mob:flex-col mob:items-center mob:h-[135%]"
+      class="project-item wide:mx-12 mob:flex mob:flex-col mob:items-center mob:h-[135%] mob:w-4/5"
       *ngFor="let project of projectsList"
       [projectItem]="project"
     ></app-project-item>
