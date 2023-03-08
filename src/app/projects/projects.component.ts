@@ -30,7 +30,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'This Portfolio!',
       description:
-        "The only place where form takes priority over function (probably because form IS the function, idk :P).<br /> Built using Angular, Angular's animations module and TailwindCSS.",
+        "The only place where form takes priority over function (probably because form IS the function, idk :P).<b><i>Built using Angular, Angular's animations module and TailwindCSS.</i></b>",
       image: 'assets/portfolio_main.png',
       imageCaption: 'The topmost section of the page.',
       gitHubLink: 'https://github.com/nithinrdy/nithinrdy.github.io',
@@ -39,7 +39,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'Connect',
       description:
-        'A real-time 1:1 video chat application, featuring basic user authentication (using JWTs).<br /> Built using the native WebRTC API (no third-party libraries/abstractions), Socket.IO, ReactJS, Framer-Motion, TailwindCSS, ExpressJS & Supabase. Written in TypeScript.',
+        'A real-time 1:1 video chat application, featuring basic user authentication.<b><i> Built using the native WebRTC API (no third-party libraries or abstractions), Socket.IO, ReactJS, Framer-Motion, TailwindCSS, ExpressJS, Supabase and TypeScript. Authentication performed using JWTs.</i></b>',
       image: 'assets/connect_main.png',
       imageCaption: "Connect's dashboard page.",
       gitHubLink:
@@ -49,7 +49,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'Quick-lend',
       description:
-        'An app designed to allow users to post requests for daily utilites to swiftly borrow/lend products within small communities (not the most revolutionary idea -- just me polishing my full-stack skills).<br /> Built using ReactJS, TailwindCSS, Framer-Motion, ExpressJS, MongoDB/Mongoose, and TypeScript.',
+        'An app designed to allow users to post requests for daily utilites to swiftly borrow/lend products within small communities (not the most revolutionary idea -- just me polishing my full-stack skills).<b><i> Built using ReactJS, TailwindCSS, Framer-Motion, ExpressJS, MongoDB/Mongoose and TypeScript.</i></b>',
       image: 'assets/quick_main.png',
       imageCaption: "Quick-lend's landing page.",
       gitHubLink:
@@ -59,7 +59,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'My GSoC 2022 project',
       description:
-        "<b>Celebrating learners' accomplishments</b>. <br /> The project I worked on as part Google Summer of Code 2022 -- involved adding and revamping several components to/of Oppia.org, meant to celebrate learners' accomplishments and provide further learning recommendations. Link contains further details, including tech used.",
+        "<b>Celebrating learners' accomplishments</b>.<br />The project I worked on as part Google Summer of Code 2022 -- involved adding and revamping several components to/of Oppia.org, meant to celebrate learners' accomplishments and provide further learning recommendations. Link contains further details.",
       image: 'assets/end_chapter.png',
       imageCaption:
         'The revamped end chapter screen, a small part of the 150 hour-long project.',
