@@ -66,7 +66,7 @@
 
 .hamburger-container.mobile-nav-active .bar-1 {
   @apply bg-white;
-  transform: rotate(45deg) translate(11px, 13px);
+  transform: rotate(45deg) translate(-13px, 19.5px);
 }
 
 .hamburger-container.mobile-nav-active .bar-2 {
@@ -75,7 +75,7 @@
 
 .hamburger-container.mobile-nav-active .bar-3 {
   @apply bg-white;
-  transform: rotate(-45deg) translate(11px, -13px);
+  transform: rotate(-45deg) translate(23px, -19.5px);
 }
 
 .hide-nav-menu {
