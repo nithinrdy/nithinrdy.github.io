@@ -57,13 +57,15 @@ export class ProjectsComponent implements AfterViewInit {
       liveLink: 'https://3.86.13.21.nip.io/',
     },
     {
-      title: 'Fettle-scraper',
+      title: 'My GSoC 2022 project',
       description:
-        'A set of python scripts which scrape raw HTML off of the CDC website, compile a list of diseases, then sequentially scrapes the basic information for each disease (description, aliases, symptoms, rarity, etc.).<br /> Built using Python, BeautifulSoup, and automated using a simple Bash script.',
-      image: 'assets/dd.png',
-      imageCaption: "Doesn't really have a UI, so here's a cute picture of DD!",
-      gitHubLink: 'https://github.com/nithinrdy/fettle-scraper',
-      liveLink: null,
+        "<b>Celebrating learners' accomplishments</b>. <br /> The project I worked on as part Google Summer of Code 2022 -- involved adding and revamping several components to/of Oppia.org, meant to celebrate learners' accomplishments and provide further learning recommendations. Link contains further details, including tech used.",
+      image: 'assets/end_chapter.png',
+      imageCaption:
+        'The revamped end chapter screen, a small part of the 150 hour-long project.',
+      gitHubLink: null,
+      liveLink:
+        'https://summerofcode.withgoogle.com/archive/2022/projects/5XM0ONH7',
     },
   ];
 

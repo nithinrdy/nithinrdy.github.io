@@ -11,7 +11,7 @@ export class ProjectItemComponent implements AfterViewInit {
     description: string;
     image: string;
     imageCaption: string;
-    gitHubLink: string;
+    gitHubLink: string | null;
     liveLink: string | null;
   };
   sectionOpened = false;

@@ -54,6 +54,7 @@
           </p>
           <div class="flex items-start mob:justify-center">
             <a
+              *ngIf="projectItem.gitHubLink"
               class="wide:ml-4 mob:scale-90"
               [href]="projectItem.gitHubLink"
               target="_blank"
@@ -103,7 +104,7 @@
     </div>
     <div
       *ngIf="sectionOpened"
-      class="mob:hidden relative flex flex-col items-center text-2xl pb-4 text-right mt-16 w-[170%] widescreen-desc-text"
+      class="mob:hidden relative flex flex-col items-center text-2xl pb-4 text-right w-[170%] widescreen-desc-text"
       [innerHTML]="projectItem.description"
     ></div>
   </div>
