@@ -4,11 +4,11 @@
   class="about-me flex relative flex-col items-center text-3xl h-screen"
   style="font-family: 'Raleway'"
 >
-  <div class="flex flex-col mt-16 w-4/5" *ngIf="sectionIsOnScreen" @aboutMeFade>
+  <div class="flex flex-col mt-8 w-4/5" *ngIf="sectionIsOnScreen" @aboutMeFade>
     <p
-      class="wide:text-7xl mob:text-4xl italic self-start transition-all text-left"
+      class="wide:text-7xl mob:text-4xl self-start transition-all text-left"
     >
-      <span> Hey there! <br /> </span>
+      <span class="text-3xl mob:text-2xl"> Hey there! <br /> </span>
       Name's Nithin. I'm
       <span
         class="inline-block wide:text-5xl mob:text-2xl transition-all changing-text"
@@ -18,7 +18,7 @@
         {{ whoIAm[whoIAmIndex] }}!</span
       >
     </p>
-    <p class="bottom-text self-end mob:text-2xl text-right">
+    <p class="bottom-text self-end wide:text-6xl mob:text-2xl text-right">
       Down here's some cool** stuff I made
     </p>
     <p
