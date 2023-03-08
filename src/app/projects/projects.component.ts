@@ -59,7 +59,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'My GSoC 2022 project',
       description:
-        "<b>Celebrating learners' accomplishments</b>.<br />The project I worked on as part Google Summer of Code 2022 -- involved adding and revamping several components to/of Oppia.org, meant to celebrate learners' accomplishments and provide further learning recommendations. Link contains further details.",
+        "<b>Celebrating learners' accomplishments</b>.<br />The project I worked on as part of Google Summer of Code 2022 -- involved adding and revamping several components to/of Oppia.org, meant to celebrate learners' accomplishments and provide further learning recommendations. Link contains further details.",
       image: 'assets/end_chapter.png',
       imageCaption:
         'The revamped end chapter screen, a small part of the 150 hour-long project.',
