@@ -98,14 +98,26 @@
         </div>
       </div>
       <p
-        class="mod:block wide:hidden pt-2 pb-2 pl-2 pr-2 text-base text-center mobile-desc-text"
+        class="mod:block wide:hidden p-2 w-full text-base text-center mobile-desc-text"
         [innerHTML]="projectItem.description"
+      ></p>
+      <p
+        class="mod:block wide:hidden p-2 w-full font-bold italic text-base text-center mobile-desc-text"
+        [innerHTML]="projectItem.tech"
       ></p>
     </div>
     <div
       *ngIf="sectionOpened"
-      class="mob:hidden relative flex flex-col items-center text-2xl pb-4 text-right w-[170%] widescreen-desc-text"
-      [innerHTML]="projectItem.description"
-    ></div>
+      class="mob:hidden w-[170%] flex flex-col justify-between h-full"
+    >
+      <div
+        class="relative p-4 text-left widescreen-desc-text w-4/5 pb-0 text-base"
+        [innerHTML]="projectItem.description"
+      ></div>
+      <div
+        class="relative p-4 text-right widescreen-desc-text w-full text-lg font-bold italic mt-auto self-end"
+        [innerHTML]="projectItem.tech"
+      ></div>
+    </div>
   </div>
 </div>

@@ -9,6 +9,7 @@ export class ProjectItemComponent implements AfterViewInit {
   @Input() projectItem!: {
     title: string;
     description: string;
+    tech: string;
     image: string;
     imageCaption: string;
     gitHubLink: string | null;
