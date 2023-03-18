@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { LoaderComponent } from './loader/loader.component';
 import { CreditsComponent } from './credits/credits.component';
+import { EmailBarComponent } from './email-bar/email-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { CreditsComponent } from './credits/credits.component';
     NavbarComponent,
     MainSectionComponent,
     LinksBarComponent,
+    EmailBarComponent,
     AboutMeComponent,
     ProjectsComponent,
     ProjectItemComponent,
