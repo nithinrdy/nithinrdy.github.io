@@ -1,7 +1,7 @@
 <div
   #projects
   id="projects"
-  class="projects flex relative flex-col items-center text-3xl h-screen px-32 pb-32 mob:px-4 mob:w-screen"
+  class="projects flex relative flex-col text-3xl h-screen px-32 pb-32 mob:px-4 mob:w-screen"
   style="font-family: 'Raleway'"
 >
   <div
@@ -10,8 +10,9 @@
     @cardsFadeIn
   >
     <app-project-item
-      class="project-item wide:mx-12 mob:flex mob:flex-col mob:items-center mob:h-[135%] mob:w-4/5"
-      *ngFor="let project of projectsList"
+      class="project-item mob:flex wide:w-60 mob:flex-col mob:items-center mob:h-[135%] mob:w-4/5"
+      *ngFor="let project of projectsList; index as idx"
+      [ngClass]="{'ml-auto mr-12': (idx < 2)}"
       [projectItem]="project"
     ></app-project-item>
   </div>
