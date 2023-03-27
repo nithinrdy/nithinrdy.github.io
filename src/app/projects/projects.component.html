@@ -10,9 +10,9 @@
     @cardsFadeIn
   >
     <app-project-item
-      class="project-item mob:flex wide:w-60 mob:flex-col mob:items-center mob:h-[135%] mob:w-4/5"
+      class="project-item mob:flex wide:w-80 wide:h-48 mob:flex-col mob:items-center mob:h-[135%] mob:w-4/5"
       *ngFor="let project of projectsList; index as idx"
-      [ngClass]="{'ml-auto mr-12': (idx < 2)}"
+      [ngClass]="{ 'wide:ml-auto wide:mr-12': idx < 2 }"
       [projectItem]="project"
     ></app-project-item>
   </div>
